@@ -7,11 +7,15 @@
   background-color: rgb(0, 0, 0);
   color: white;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 
-.Todo__title {
+.TodoCounter__option {
+  cursor: pointer;
+}
+
+.TodoCounter__title {
   background-color: rgb(218, 218, 199);
   font-size: 5rem;
   color: black;
@@ -19,4 +23,85 @@
   padding: 3px 5px;
   border-radius: 5px;
   margin-left: 10px;
+}
+
+.TodoCounter__image {
+  width: auto;
+  height: 66px;
+  background-color: rgb(218, 218, 199);
+  border-radius: 5px;
+  margin-right: 15px;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  -ms-transition: -ms-transform 0.8s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+}
+
+.TodoCounter__image:hover {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.TodoCounter__image:hover {
+  cursor: pointer;
+}
+
+.TodoCounter__nav {
+  width: inherit;
+  display: contents;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(218, 218, 199);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+/* SHIFT */
+nav.shift ul li a {
+  position: relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: black;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: rgb(218, 218, 199);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
