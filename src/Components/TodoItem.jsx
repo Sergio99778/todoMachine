@@ -3,7 +3,11 @@ import React from 'react';
 import './styles/TodoItem.css';
 
 function TodoItem(props) {
-  return <p>{props.text}</p>;
+  return (
+    <section className="TodoItem">
+      <li className="TodoItem__text">✨ {props.text}</li>
+    </section>
+  );
 }
 
 export default TodoItem;

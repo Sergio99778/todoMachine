@@ -1,2 +1,9 @@
 .TodoList {
+  width: 72%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.TodoList__list {
+  padding: 0;
 }
