@@ -1,0 +1,19 @@
+.TodoSearch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.TodoSearch__input {
+  border-radius: 3px;
+  border: 1.5px solid rgb(0, 0, 0);
+  width: 70%;
+  height: 30px;
+  padding: 3px 0px 3px 5px;
+}
+.TodoSearch__input::placeholder {
+  font-weight: bold;
+  color: rgb(78, 75, 75);
+}
