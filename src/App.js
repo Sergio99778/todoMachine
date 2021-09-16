@@ -4,12 +4,11 @@ import TodoCounter from './Components/TodoCounter';
 import TodoSearch from './Components/TodoSearch';
 import TodoList from './Components/TodoList';
 import TodoItem from './Components/TodoItem';
-import CreateTodoButton from './Components/CreateTodoButton';
 
 const todos = [
   { text: 'Cortar cebolla', completed: false, type: 'timer' },
   { text: 'Tomar el curso de intro a React', completed: false, type: 'counter' },
-  { text: 'Llorar con la llorona', completed: false, type: 'once' },
+  { text: 'Llorar con la llorona aklsjdnakjd nnklj ndalks jdnaldjnaldjnaldjkna sdkljnasl', completed: false, type: 'once' },
 ];
 
 function App() {
@@ -19,10 +18,9 @@ function App() {
       <TodoSearch />
       <TodoList>
         {todos.map((todo, index) => (
-          <TodoItem key={index} text={todo.text} />
+          <TodoItem key={index} text={todo.text} type={todo.type} />
         ))}
       </TodoList>
-      <CreateTodoButton />
     </>
   );
 }

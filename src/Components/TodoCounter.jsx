@@ -1,5 +1,6 @@
 import React from 'react';
-import plusImg from '../assets/plus-sign.png';
+import CreateTodoButton from './CreateTodoButton';
+
 import './styles/TodoCounter.css';
 
 function TodoCounter() {
@@ -18,7 +19,7 @@ function TodoCounter() {
           </a>
         </li>
       </ul>
-      <img className="TodoCounter__image" src={plusImg} alt="Add one to do" />
+      <CreateTodoButton />
     </nav>
   );
 }
