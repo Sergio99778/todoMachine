@@ -1,0 +1,20 @@
+:root {
+  --container-width: 50%;
+}
+
+.Once {
+  width: var(--container-width);
+  border-radius: 3px;
+  padding: 3px;
+  height: 40px;
+  border: 1px solid rgb(218, 218, 199);
+}
+
+.Once__icon {
+  width: var(--container-width);
+  height: auto;
+}
+
+.Once:active {
+  background-color: lawngreen;
+}
