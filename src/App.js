@@ -8,7 +8,13 @@ import TodoItem from './Components/TodoItem';
 const todos = [
   { text: 'Cortar cebolla', completed: false, type: 'timer' },
   { text: 'Tomar el curso de intro a React', completed: false, type: 'counter' },
-  { text: 'Llorar con la llorona aklsjdnakjd nnklj ndalks jdnaldjnaldjnaldjkna sdkljnasl', completed: false, type: 'once' },
+  { text: 'Ouvrir le meme chose', completed: false, type: 'once' },
+  { text: 'Tomar el curso de intro a React', completed: false, type: 'timer' },
+  { text: 'Quelque chose', completed: false, type: 'timer' },
+  { text: 'Tomar el curso de intro a React', completed: false, type: 'counter' },
+  { text: 'Ouvrir le meme chose', completed: false, type: 'counter' },
+  { text: 'Redux course projects', completed: false, type: 'counter' },
+  { text: 'Ouvrir le meme chose', completed: false, type: 'once' },
 ];
 
 function App() {

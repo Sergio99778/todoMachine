@@ -28,6 +28,7 @@ label {
   border-radius: 50%;
   border-left-color: #5cb85c;
   animation: rotate 2.2s linear infinite;
+  cursor: pointer;
 }
 @keyframes rotate {
   50% {
