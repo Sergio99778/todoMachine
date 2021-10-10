@@ -14,7 +14,6 @@ const todos = [
   { text: 'Tomar el curso de intro a React', completed: false, type: 'counter' },
   { text: 'Ouvrir le meme chose', completed: false, type: 'counter' },
   { text: 'Redux course projects', completed: false, type: 'counter' },
-  { text: 'Ouvrir le meme chose', completed: false, type: 'once' },
 ];
 
 function App() {

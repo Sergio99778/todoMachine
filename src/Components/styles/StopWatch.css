@@ -1,0 +1,26 @@
+.stopwatch--container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.stopWatch--button {
+  padding: 1px 3px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px black solid;
+  font-size: 10px;
+  margin: 0 2px;
+}
+.stopWatch--list li {
+  list-style: none;
+  width: fit-content;
+  background-color: rgb(243, 242, 242);
+}
+
+.stopWatch--list {
+  display: flex;
+  padding: 0;
+}

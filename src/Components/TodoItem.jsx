@@ -1,4 +1,5 @@
 import React from 'react';
+import StopWatch from './StopWatch';
 import Counter from './Counter';
 import Once from './Once';
 
@@ -8,7 +9,7 @@ let manageItem;
 
 function TodoItem(props) {
   if (props.type === 'timer') {
-    manageItem = <h1>Timer</h1>;
+    manageItem = <StopWatch />;
   }
   if (props.type === 'counter') {
     manageItem = <Counter />;
