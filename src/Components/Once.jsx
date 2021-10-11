@@ -6,7 +6,7 @@ function Once() {
     <>
       <input type="checkbox" id="check" />
       <label for="check">
-        <div class="check-icon"></div>
+        <div className="check-icon"></div>
       </label>
     </>
   );

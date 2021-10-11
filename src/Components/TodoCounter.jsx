@@ -9,12 +9,12 @@ function TodoCounter() {
       <h1 className="TodoCounter__title">DI</h1>
       <ul className="TodoCounter__nav">
         <li>
-          <a href className="TodoCounter__option">
+          <a href="/" className="TodoCounter__option">
             Done
           </a>
         </li>
         <li>
-          <a href className="TodoCounter__option">
+          <a href="/" className="TodoCounter__option">
             To Do
           </a>
         </li>

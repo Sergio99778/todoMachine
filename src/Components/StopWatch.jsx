@@ -4,7 +4,7 @@ import './styles/StopWatch.css';
 function StopWatch() {
   return (
     <div className="stopwatch--container">
-      <div id="stopwatch">00:00:00</div>
+      <div id="timer">00:00:00</div>
       <ul className="stopWatch--list">
         <li>
           <button className="stopWatch--button" onClick={() => startTimer()}>
@@ -28,7 +28,8 @@ function StopWatch() {
 
 export default StopWatch;
 
-const timer = document.getElementById('stopwatch');
+const timer = document.getElementById('timer');
+console.log(timer);
 
 let hr = 0;
 let min = 0;
@@ -75,14 +76,14 @@ function timerCycle() {
       hr = '0' + hr;
     }
 
-    timer.textContent = hr + ':' + min + ':' + sec;
+    timer.innerHtml = hr + ':' + min + ':' + sec;
 
     setTimeout(timerCycle, 1000);
   }
 }
 
 function resetTimer() {
-  timer.textContent = '00:00:00';
+  timer.innerHtml = '00:00:00';
   stoptime = true;
   hr = 0;
   sec = 0;
